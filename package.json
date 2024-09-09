@@ -1,0 +1,30 @@
+{
+  "name": "nodevoto",
+  "version": "5.3.0",
+  "description": "Node.js implementation of emojivoto with gifs instead of emojis",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint . --max-warnings=0 --report-unused-disable-directives",
+    "voting": "node src/server.js"
+  },
+  "author": "Sebastian Tiedtke <sebastiantiedtke@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.11.1",
+    "@grpc/proto-loader": "^0.7.13",
+    "body-parser": "^1.20.2",
+    "chai": "^5.1.1",
+    "express": "^4.19.2",
+    "js-yaml": ">=4.1.0",
+    "lodash": ">=4.17.21",
+    "nodemon": "^3.1.4",
+    "superagent": "^10.0.2",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.14.2",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "mocha": "^10.7.3"
+  }
+}
