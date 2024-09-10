@@ -17,4 +17,3 @@ build:
 manifests:
   rawYaml:
     - k8s/deployment.yml
-    - k8s/namespace.yml
