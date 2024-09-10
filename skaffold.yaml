@@ -1,0 +1,20 @@
+apiVersion: skaffold/v4beta11
+kind: Config
+metadata:
+  name: nodevoto-voting
+build:
+  local:
+    push: false
+    useDockerCLI: true
+  artifacts:
+    - image: nodevoto-voting
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - '**/*.js'
+          - '**/*.proto'
+manifests:
+  rawYaml:
+    - k8s/deployment.yml
+    - k8s/namespace.yml
